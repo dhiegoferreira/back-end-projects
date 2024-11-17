@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>d138f4c4-e45c-4887-b2c2-1072937f8a14</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NRedisStack" Version="0.13.0" />
+    <PackageReference Include="NSwag.AspNetCore" Version="14.1.0" />
+  </ItemGroup>
+
+</Project>

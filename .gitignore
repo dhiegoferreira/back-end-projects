@@ -1,0 +1,45 @@
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.code-workspace
+
+# Ignore configuration files that may contain sensitive information
+appsettings.json
+appsettings.*.json
+
+# Ignore compiled files
+*.dll
+*.exe
+*.pdb
+
+# Ignore temporary files
+*.log
+*.tmp
+*.temp
+*.cache
+
+# Ignore coverage and testing files
+TestResults/
+coverage/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Rider and JetBrains files
+*.sln.iml
+.idea/
+
+# Ignore .NET tools
+*.vs/
+.vscode/
