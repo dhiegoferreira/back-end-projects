@@ -1,6 +1,9 @@
-# Wheather API .NET
+# Weather API .NET
 
-Warther API that fetches and returns wather data.
+
+ref: https://roadmap.sh/projects/weather-api-wrapper-service
+
+Weather API that fetches and returns wather data.
 
 ![image](https://github.com/user-attachments/assets/78aa2b4c-b2cb-4d5d-85c5-938be2150962)
 
@@ -10,7 +13,6 @@ Source Data: https://www.visualcrossing.com/weather-api
 
 > Recomendations and Tips
 - [x] City code entered by the user as the key and save there the result from calling the API. (City name instead)
-
 - [ ] At the same time, when you "set" the value in the cache, you can also give it an expiration time in seconds (using the EX flag on the SET command).
 - [x] Start by creating a simple API that returns a hardcoded wather response. This will help you understand how to sctructure you API and how to handle requests.
 - [x] Use enviornment variables to store the API key and the Redis connection string. This way, you can easily change them without having to modify your code.
