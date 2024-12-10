@@ -16,3 +16,12 @@ https://roadmap.sh/backend/projects
 - [ ] DataBase Backup Utility
 - [ ] Scalable E-Commerce Platform
 
+
+![alt text](/resources/image.png)
+
+
+Tools:
+
+https://dummyjson.com/
+
+
