@@ -8,7 +8,7 @@ static void CacheInMemory()
     string value = "Hello, Cache!";
 
     cache.Set(key, value);
-    cache.Set()
+ 
 
     if (cache.TryGetValue(key, out string cachedValue))
     {
