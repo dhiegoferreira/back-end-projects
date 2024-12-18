@@ -26,19 +26,21 @@ class Program
         Console.WriteLine($"Port: {port}");
         Console.WriteLine($"Origin: {origin}");
 
+        string route = origin.Split("/").Last();    
+        System.Console.WriteLine($"Route: {route}");
+        string url = $"http://localhost:{port}/{route}/";
         HttpListener listener = new HttpListener();
-        listener.Prefixes.Add($"http://localhost:{port}/");
+        listener.Prefixes.Add(url);
         listener.Start();
-        Console.WriteLine($"Listening on http://localhost:{port}/");
 
         MemoryCache cache = new MemoryCache(new MemoryCacheOptions());
-
         while (true)
         {
             HttpListenerContext context = await listener.GetContextAsync();
             string requestUrl = context.Request.RawUrl;
+            System.Console.WriteLine($"Request URL: {requestUrl}");
             string cacheKey = $"{origin}{requestUrl}";
-
+            System.Console.WriteLine($"Cache Key: {cacheKey}");
             if (cache.TryGetValue(cacheKey, out string cachedResponse))
             {
                 Console.WriteLine($"Cache hit: {cacheKey}");
