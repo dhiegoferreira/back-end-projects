@@ -17,7 +17,6 @@ https://roadmap.sh/backend/projects
 - [ ] Scalable E-Commerce Platform
 
 
-![alt text](/resources/image.png)
 
 
 Tools:
